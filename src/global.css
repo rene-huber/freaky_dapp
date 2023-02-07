@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+  /* font-family: 'Bebas Neue', cursive;
+font-family: 'Press Start 2P', cursive; */
+font-family: 'Rubik', sans-serif;
+    background: #000000;
+}
+
+
+.nav {
+    position: absolute;
+    overflow: hidden;
+}
+
+.corona{  position: absolute ;
+    background: url(./img/corona.png) no-repeat;
+    background-position: 35px 63px;
+    right: 0;
+    bottom: 0; 
+    height: 110px; 
+    width: 222px;
+    overflow: hidden; 
+    background-color: aquamarine;
+    z-index: 0;
+
+   }
+
+.scenario {
+    background: url(./img/bk-pink.jpg) no-repeat center;
+    background-size: cover;
+    overflow: hidden;
+    z-index: 999;
+
+}
+
+.barraNegra {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100px;
+    background: #000;
+  }
+  
+  .box {
+    width: 355px;
+    height: 212;
+    padding: 0 21px;
+  }
+  .box p{color: #FFF; font-size: 11px; padding-top: 21px;}
+
+.letrero {
+  color:transparent;
+ -webkit-text-stroke: 0.5px #FFF;
+ font-size: 55px;
+ font-family: 'Press Start 2P', cursive;
+ background-color: rgba(0, 0, 0, 0);
+ overflow:"hidden",
+}
+
+
+.astronauta{
+    background: url(https://i.gifer.com/YKcN.gif), url(./img/astronauta.jpg) ;
+    background-repeat: no-repeat, no-repeat;
+    background-position:center 43px , top center;
+    height: 1982px;
+    width: 100%;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1299px) {
+    .scenario {
+        background: url(./img/bk-pink.jpg) no-repeat bottom center;
+        background-size: 100% 100%;
+        overflow: hidden;
+    }
+
+
+}
