@@ -6,12 +6,23 @@ import ballImage from "../img/marmol.png";
 import v_1 from "../img/v-1.png";
 import v_2 from "../img/v-2.png";
 import v_3 from "../img/v-3.png";
-
 import v_5 from "../img/v-5.png";
 import v_6 from "../img/v-6.png";
 import v_7 from "../img/v-7.png";
 import v_8 from "../img/v-8.png";
 import v_9 from "../img/v-9.png";
+import v_10 from "../img/v-10.png";
+import v_11 from "../img/v-11.png";
+import v_12 from "../img/v-12.png";
+import v_13 from "../img/v-13.png";
+import v_14 from "../img/v-14.png";
+import v_15 from "../img/v-15.png";
+import v_16 from "../img/v-16.png";
+import v_17 from "../img/v-17.png";
+import v_18 from "../img/v-18.png";
+import v_19 from "../img/v-19.png";
+import cigar from "../img/cigar.png";
+
 
 
 const Anima = () => {
@@ -47,6 +58,45 @@ const Anima = () => {
   
 
 
+      const v10 = Bodies.circle(909, 1, 23, {
+        restitution: 0.5,
+        label: "balCd",render: {sprite: {texture: v_10, },},});
+
+      const v11 = Bodies.circle(909, 1, 23, {
+        restitution: 0.5,
+        label: "balCd",render: {sprite: {texture: v_11, },},});
+
+      const v12 = Bodies.circle(909, 1, 23, {
+        restitution: 0.5,
+        label: "balCd",render: {sprite: {texture: v_12, },},});
+
+      const v13 = Bodies.circle(909, 1, 23, {
+        restitution: 0.5,
+        label: "balCd",render: {sprite: {texture: v_13, },},});
+
+      const v14 = Bodies.circle(909, 1, 23, {
+        restitution: 0.5,
+        label: "balCd",render: {sprite: {texture: v_14, },},});
+
+      const v15 = Bodies.circle(909, 1, 23, {
+        restitution: 0.5,
+        label: "balCd",render: {sprite: {texture: v_15, },},});
+
+      const v16 = Bodies.circle(909, 1, 23, {
+        restitution: 0.5,
+        label: "balCd",render: {sprite: {texture: v_16, },},});
+
+      const v17 = Bodies.circle(909, 1, 23, {
+        restitution: 0.5,
+        label: "balCd",render: {sprite: {texture: v_17, },},});
+
+      const v18 = Bodies.circle(909, 1, 23, {
+        restitution: 0.5,
+        label: "balCd",render: {sprite: {texture: v_18, },},});
+
+      const v19 = Bodies.circle(909, 1, 23, {
+        restitution: 0.5,
+        label: "balCd",render: {sprite: {texture: v_19, },},});
     const ballA = Bodies.rectangle(window.innerWidth/2, 0, 211, 366, {
       restitution: 0.3,
       label: "ballA",
@@ -62,6 +112,15 @@ const Anima = () => {
       render: {
         sprite: {
           texture: crown,
+        },
+      },
+    });
+    const ciga = Bodies.rectangle(110, 21, 52, 51, {
+      restitution: 0.1,
+      label: "ciga",
+      render: {
+        sprite: {
+          texture: cigar,
         },
       },
     });
@@ -97,9 +156,10 @@ const Anima = () => {
     const v9 = Bodies.circle(909, 1, 23, {
       restitution: 0.5,
       label: "balCd",render: {sprite: {texture: v_9, },},});
+      
+      
+      
 
-   
-  
    
 
     World.add(engine.world, [
@@ -120,7 +180,7 @@ const Anima = () => {
 
  
 
-    World.add(engine.world, [ballA, corona,  v1, v2,v3,v5,v6,v7,v8,v9 ]);
+    World.add(engine.world, [ballA,  v1, v2,v3,v5,v6,v7,v8,v9,v10,v11,ciga,v12,v13,corona,v14,v15,v16,v17,v18,v19,  ]);
 
     // add mouse control
   

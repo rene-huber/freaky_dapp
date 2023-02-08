@@ -18,6 +18,7 @@ const App = () => {
       <BarraNegra />
       
       <Astronauta />
+      
       <TextoRotar />
       <Mint />
       <Statue />
