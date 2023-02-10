@@ -21,8 +21,8 @@ import v_16 from "../img/v-16.png";
 import v_17 from "../img/v-17.png";
 import v_18 from "../img/v-18.png";
 import v_19 from "../img/v-19.png";
-import cigar from "../img/cigar.png";
-
+import cigarr from "../img/cigar.png";
+import inyex from "../img/inyec.png";
 
 
 const Anima = () => {
@@ -55,50 +55,8 @@ const Anima = () => {
         
       },
     });
-  
-
-
-      const v10 = Bodies.circle(909, 1, 23, {
-        restitution: 0.5,
-        label: "balCd",render: {sprite: {texture: v_10, },},});
-
-      const v11 = Bodies.circle(909, 1, 23, {
-        restitution: 0.5,
-        label: "balCd",render: {sprite: {texture: v_11, },},});
-
-      const v12 = Bodies.circle(909, 1, 23, {
-        restitution: 0.5,
-        label: "balCd",render: {sprite: {texture: v_12, },},});
-
-      const v13 = Bodies.circle(909, 1, 23, {
-        restitution: 0.5,
-        label: "balCd",render: {sprite: {texture: v_13, },},});
-
-      const v14 = Bodies.circle(909, 1, 23, {
-        restitution: 0.5,
-        label: "balCd",render: {sprite: {texture: v_14, },},});
-
-      const v15 = Bodies.circle(909, 1, 23, {
-        restitution: 0.5,
-        label: "balCd",render: {sprite: {texture: v_15, },},});
-
-      const v16 = Bodies.circle(909, 1, 23, {
-        restitution: 0.5,
-        label: "balCd",render: {sprite: {texture: v_16, },},});
-
-      const v17 = Bodies.circle(909, 1, 23, {
-        restitution: 0.5,
-        label: "balCd",render: {sprite: {texture: v_17, },},});
-
-      const v18 = Bodies.circle(909, 1, 23, {
-        restitution: 0.5,
-        label: "balCd",render: {sprite: {texture: v_18, },},});
-
-      const v19 = Bodies.circle(909, 1, 23, {
-        restitution: 0.5,
-        label: "balCd",render: {sprite: {texture: v_19, },},});
     const ballA = Bodies.rectangle(window.innerWidth/2, 0, 211, 366, {
-      restitution: 0.3,
+      restitution: 0.2,
       label: "ballA",
       render: {
         sprite: {
@@ -106,7 +64,7 @@ const Anima = () => {
         },
       },
     });
-    const corona = Bodies.rectangle(1210, 21, 52, 51, {
+    const corona = Bodies.rectangle(1270, 21, 52, 51, {
       restitution: 0.2,
       label: "corona",
       render: {
@@ -115,48 +73,100 @@ const Anima = () => {
         },
       },
     });
-    const ciga = Bodies.rectangle(110, 21, 52, 51, {
+    const cigar = Bodies.rectangle(110, 21, 52, 51, {
       restitution: 0.1,
       label: "ciga",
       render: {
         sprite: {
-          texture: cigar,
+          texture: cigarr,
         },
       },
     });
+    const inye = Bodies.circle(1509, 1, 23, {
+      restitution: 0.3,
+      label: "balCd",render: {sprite: {texture: inyex, },},});
 
-    const v1 = Bodies.circle(179, 1, 8,  {
-      restitution: 0.5,
+
+      const v10 = Bodies.circle(909, 1, 23, {
+        restitution: 0.3,
+        label: "balCd",render: {sprite: {texture: v_10, },},});
+
+      const v11 = Bodies.circle(909, 1, 23, {
+        restitution: 0.3,
+        label: "balCd",render: {sprite: {texture: v_11, },},});
+
+      const v12 = Bodies.circle(909, 1, 23, {
+        restitution: 0.3,
+        label: "balCd",render: {sprite: {texture: v_12, },},});
+
+      const v13 = Bodies.circle(1909, 1, 23, {
+        restitution: 0.3,
+        label: "balCd",render: {sprite: {texture: v_13, },},});
+
+      const v14 = Bodies.circle(1909, 1, 23, {
+        restitution: 0.3,
+        label: "balCd",render: {sprite: {texture: v_14, },},});
+
+      const v15 = Bodies.circle(1909, 1, 23, {
+        restitution: 0.3,
+        label: "balCd",render: {sprite: {texture: v_15, },},});
+
+      const v16 = Bodies.circle(909, 1, 23, {
+        restitution: 0.3,
+        label: "balCd",render: {sprite: {texture: v_16, },},});
+
+      const v17 = Bodies.circle(309, 1, 23, {
+        restitution: 0.3,
+        label: "balCd",render: {sprite: {texture: v_17, },},});
+
+      const v18 = Bodies.circle(909, 1, 23, {
+        restitution: 0.3,
+        label: "balCd",render: {sprite: {texture: v_18, },},});
+
+      const v19 = Bodies.circle(909, 1, 23, {
+        restitution: 0.3,
+        label: "balCd",render: {sprite: {texture: v_19, },},});
+   
+
+    const v1 = Bodies.circle(279, 1, 8,  {
+      restitution: 0.3,
       label: "blCffffd",render: {sprite: {texture: v_1, },},});
 
     const v2 = Bodies.circle(159, 1, 11,  {
-      restitution: 0.5,
+      restitution: 0.3,
       label: "baldsalCd",render: {sprite: {texture: v_2, },},});
 
-    const v3 = Bodies.circle(109, 1, 6,  {
-      restitution: 0.5,
+    const v3 = Bodies.circle(309, 1, 6,  {
+      restitution: 0.3,
       label: "baldfslCd",render: {sprite: {texture: v_3, },},});    
 
-    const v5 = Bodies.circle(429, 1, 4,  {
-      restitution: 0.5,
+    const v5 = Bodies.circle(629, 1, 4,  {
+      restitution: 0.3,
       label: "ballfsdCd",render: {sprite: {texture: v_5, },},});
 
     const v6 = Bodies.circle(909, 1, 9,  {
-      restitution: 0.5,
+      restitution: 0.3,
       label: "ba9llCd",render: {sprite: {texture: v_6, },},});
 
     const v7 = Bodies.circle(1009, 1, 4,  {
-      restitution: 0.5,
+      restitution: 0.3,
       label: "bauzrrrrrd",render: {sprite: {texture: v_7, },},});
 
     const v8 = Bodies.circle(1209, 1, 23, {
-      restitution: 0.5,
+      restitution: 0.3,
       label: "blCd",render: {sprite: {texture: v_8, },},});
 
     const v9 = Bodies.circle(909, 1, 23, {
-      restitution: 0.5,
+      restitution: 0.3,
       label: "balCd",render: {sprite: {texture: v_9, },},});
       
+      
+      
+    const v21 = Bodies.circle(1509, 1, 23, {
+      restitution: 0.3,
+      label: "balCd",render: {sprite: {texture: v_9, },},});
+      
+    
       
       
 
@@ -180,7 +190,7 @@ const Anima = () => {
 
  
 
-    World.add(engine.world, [ballA,  v1, v2,v3,v5,v6,v7,v8,v9,v10,v11,ciga,v12,v13,corona,v14,v15,v16,v17,v18,v19,  ]);
+    World.add(engine.world, [ballA,  v1, v2,v3,v5,v6,v7,v8,v9,v10,v11,cigar,v12,v13,corona,v14,inye,v15,v16,v17,v18,v19,v21  ]);
 
     // add mouse control
   
