@@ -47,7 +47,7 @@ const Anima = () => {
       engine: engine,
       options: {
         width: window.innerWidth,
-    height: window.innerHeight,
+    height: window.innerHeight/1.2,
         wireframes: false,
         hasBounds: true,
         background: "transparent",
@@ -128,7 +128,7 @@ const Anima = () => {
         label: "balCd",render: {sprite: {texture: v_19, },},});
    
 
-    const v1 = Bodies.circle(279, 1, 8,  {
+    const v1 = Bodies.circle(79, 1, 8,  {
       restitution: 0.3,
       label: "blCffffd",render: {sprite: {texture: v_1, },},});
 
@@ -180,8 +180,8 @@ const Anima = () => {
       Bodies.rectangle(window.innerWidth, 800,5, 900, { isStatic: true , render: {fillStyle: "transparent"}}),
 
 
-      Bodies.rectangle(0, window.innerHeight, 1899, 25, { isStatic: true , render: {fillStyle: "transparent"}}),
-      Bodies.rectangle(1880, window.innerHeight, 1899, 25, { isStatic: true , render: {fillStyle: "transparent"}}),
+      Bodies.rectangle(0, window.innerHeight/1.2, 1899, 25, { isStatic: true , render: {fillStyle: "transparent"}}),
+      Bodies.rectangle(1880, window.innerHeight/1.2, 1899, 25, { isStatic: true , render: {fillStyle: "transparent"}}),
 
       Bodies.rectangle(0, window.innerHeight, 5, 1100, { isStatic: true , render: {fillStyle: "transparent"}}),
       Bodies.rectangle(0, 222, 35, 1100, { isStatic: true , render: {fillStyle: "transparent"}}),
@@ -222,8 +222,9 @@ const Anima = () => {
     });
 
     Engine.run(engine);
-
     Render.run(render);
+
+    
 
     return () => {
       Matter.Render.stop(render);
