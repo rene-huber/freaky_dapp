@@ -1,3 +1,11 @@
+.wrapL{
+  width: 100vw;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.letras{position: absolute;}
+
 .logo{
 
   position: absolute;
@@ -5,7 +13,7 @@
   width: 353px;
   margin: 0 auto;
   height: 170px;
-  top: 10px;
+  top: 7%;
   left: 0;
   right: 0;
   bottom: 0;
@@ -14,11 +22,6 @@
   size: 10px;
 }
   
-
-
-
-
-
 
 
   @media screen and (max-width: 960px) {}

@@ -12,7 +12,7 @@
         color:blue
       }
     .cursor {
-        background-color: #000000;
+        background-color: #000000d0;
         height: 32px;
         width: 32px;
      z-index: 999;
@@ -32,6 +32,7 @@ font-family: 'Rubik', sans-serif;
 .nav {
     position: absolute;
     overflow: hidden;
+    z-index: 9999;
 }
 
 .corona{  position: absolute ;
@@ -54,6 +55,12 @@ font-family: 'Rubik', sans-serif;
     z-index: 999;
 
 }
+.anima{
+background: transparent;
+overflow: hidden;
+padding: 0;
+margin: -35px;
+}
 
 .barraNegra {
     display: flex;
@@ -73,9 +80,9 @@ font-family: 'Rubik', sans-serif;
 .letrero {
   color:transparent;
  -webkit-text-stroke: 0.5px #FFF;
- font-size: 55px;
+ font-size: 17px;
  font-family: 'Press Start 2P', cursive;
- background-color: rgba(0, 0, 0, 0);
+ background-color:transparent;
  overflow:"hidden",
 }
 

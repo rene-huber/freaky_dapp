@@ -71,13 +71,10 @@ const App = () => {
 
   return (
     <>
-      <motion.div
-        className='cursor'
-        variants={variants}
-        animate={cursorVariant}
-      />
+        <TextoRotar />
       <Navbar />
-
+      <motion.div className='cursor'variants={variants} animate={cursorVariant}/>
+      
       <div className="scenario">
         <Anima />
       </div>
@@ -87,7 +84,7 @@ const App = () => {
       <Astronauta />
    </div>
       
-      <TextoRotar />
+     
       
       <h1 onMouseEnter={textEnter2} onMouseLeave={textLeave2} className='title'>Hello World</h1>
     
