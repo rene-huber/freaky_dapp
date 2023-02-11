@@ -13,8 +13,8 @@
       }
     .cursor {
         background-color: #000000d0;
-        height: 32px;
-        width: 32px;
+        height: 17px;
+        width: 17px;
      z-index: 999;
         position: fixed;
         top: 0;
@@ -62,16 +62,37 @@ padding: 0;
 margin: -35px;
 }
 
+.tresLogosWrap{
+overflow: hidden;
+padding:3px;
+display:flex;
+justify-content: space-around;
+align-items: flex-start;
+}
+
+.tresLogosBar{
+overflow: hidden;
+padding:3px;
+display:flex;
+justify-content: space-around;
+align-items: flex-start;
+}
+.tresLogos{ color:#FFF; display:absolute ;
+ width: 333px; background: transparent;}
+
 .barraNegra {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: flex-start;
     height: 100px;
     background: #000;
   }
-  
+  .textoP{
+    max-width: 37%;
+    padding-top: 21px;
+  }
   .box {
-    width: 355px;
+    width: auto;
     height: 212;
     padding: 0 21px;
   }
@@ -79,11 +100,12 @@ margin: -35px;
 
 .letrero {
   color:transparent;
- -webkit-text-stroke: 0.5px #FFF;
+ -webkit-text-stroke: 0.5px #00ffffbb;
  font-size: 17px;
  font-family: 'Press Start 2P', cursive;
  background-color:transparent;
- overflow:"hidden",
+ overflow:"hidden";letter-spacing: 2px;
+
 }
 
 
@@ -101,6 +123,10 @@ margin: -35px;
 
 
 @media screen and (max-width: 1299px) {
+  .textoP{
+    max-width: 55%;
+    padding-top: 7px;
+  }
     .scenario {
         background: url(./img/bk-pink.jpg) no-repeat bottom center;
         background-size: 100% 100%;
