@@ -88,9 +88,8 @@ const TextoRotar = () => {
           style={{ x, width }}
           initial={{ x: "100vw" }}
           animate={{ x: "-100vw" }}
-          transition={{ duration: 23, repeat: Infinity, ease: "linear" }}
-        >
-          &darr; WELCOME TO THE Freaky MARKETPLACE &darr;
+          transition={{ duration: 19, repeat: Infinity, ease: "linear" }}
+        >&darr; WELCOME TO THE Freaky MARKETPLACE &darr; 
         </motion.li>
       </motion.lo>
     </div>

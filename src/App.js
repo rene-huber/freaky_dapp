@@ -7,6 +7,8 @@ import Statue from "./components/Statue/Statue";
 import TextoRotar from "./components/textoRotar/TextoRotar";
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
+import Astro from "./img/astro-low.png"
+import Puntero from "./img/puntero.png"
 import "./global.css";
 
 const App = () => {
@@ -34,15 +36,15 @@ const App = () => {
 
   const variants = {
     default: {
-      x: mousePosition.x - 16,
-      y: mousePosition.y - 16,
+      x: mousePosition.x - 9,
+      y: mousePosition.y - 7,
     },
     text: {
-      height: 238,
-      width: 199,
-      x: mousePosition.x - 75,
-      y: mousePosition.y - 75,
-      backgroundImage: `url(https://w1.rene-huber.eu/astro-low.png)`,
+      height: 50,
+      width: 29,
+      x: mousePosition.x - 25,
+      y: mousePosition.y - 15,
+      backgroundImage: `url(${Puntero})`,
       backgroundSize: "cover",
       backgroundColor:"transparent",      
       cursor: "none"
@@ -84,13 +86,8 @@ const App = () => {
       <Astronauta />
    </div>
       
+      {/* <Mint/> */}
      
-      
-      <h1 onMouseEnter={textEnter2} onMouseLeave={textLeave2} className='title'>Hello World</h1>
-    
-
-      <Mint/>
-      <Statue />
     </>
   );
 };
