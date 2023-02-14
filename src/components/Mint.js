@@ -108,7 +108,7 @@ function Mint() {
 
   return (
     <>
-      <div style={{background:"#CCC"}}>
+      <div style={{background:"#000"}}>
         <div>
           <div>
             <h2> <p>{blockchain.account}</p>

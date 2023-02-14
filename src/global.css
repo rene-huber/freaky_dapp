@@ -178,10 +178,35 @@ font-size: 19px;
 letter-spacing: 0px;
 line-height: 23px;
 margin-top: 77px; margin-left: 10px;
+}
 
 
+
+.wrapMint{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
 
 }
+
+
+.gif{width: 300px;}
+.wrapGif{
+  background: url(./img/alt-f4_green.gif) 20% 50% no-repeat;
+  background-size: 350px ;
+  height: 426px;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
 
 
 @media screen and (max-width: 1299px) {
@@ -189,8 +214,8 @@ margin-top: 77px; margin-left: 10px;
     background: url(./img/plasma.gif),url(https://i.gifer.com/YKcN.gif), url(./img/astronauta.jpg)
      ;
     background-repeat: no-repeat;
-    background-position: 70% 99%, center 7px , top center ;
-    background-size: auto, 300px, 2101px, auto;
+    background-position: 61% 97%, center 7px , top center ;
+    background-size: 351px, 300px, 2101px, auto;
     height: 1702px;
     width: 100%;
 }
