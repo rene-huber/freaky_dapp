@@ -1,0 +1,60 @@
+.banana{
+    font-family: 'Rubik', sans-serif;
+    color:#000;
+    background: url(./banana.png);
+    background-size: 210px, 33px ;
+    background-repeat: no-repeat, repeat-X;
+    background-position: center bottom, top left;
+
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+    text-align: center;
+    height: 257px;
+ display: flex;
+  text-decoration: none;
+    padding: 21px 121px;
+}
+.banana a{text-decoration: none; color: black; cursor:help;}
+.copy p {color: #000;}
+
+.imgBanana{
+bottom: 0
+;}
+
+
+@media screen and (max-width: 671px) {
+  .banana{flex-direction:column;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    background: url(./banana.png);
+    background-size: 210px ;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    
+  }
+  .social {display: none;}
+
+}
+@media screen and (max-width: 400px) {
+  .banana{flex-direction:column;
+    
+    background: url(./bk-foot.gif),url(./banana.png);
+    background-size: 33px, 210px ;
+    background-repeat: repeat-x, no-repeat;
+    background-position: 0 193px, center 0px;  
+  
+  
+  }
+
+  .copy { 
+    
+    bottom: 78px;
+  
+    right: -5px;
+ }
+
+}

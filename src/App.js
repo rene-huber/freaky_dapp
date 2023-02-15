@@ -8,8 +8,9 @@ import TextoRotar from "./components/textoRotar/TextoRotar";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Astro from "./img/astro-low.png";
+import Footer from "./components/footer/Footer"
 import Puntero from "./img/puntero.png";
-import gif from "./img/alt-f4_green.gif";
+import gif from "./img/Freaky_GIF.gif";
 import "./global.css";
 import Gif from "./components/alt_f4/Gif";
 
@@ -52,7 +53,7 @@ const App = () => {
     },
     text2: {
       height: 238,
-      width: 195,
+      width: 211,
       x: mousePosition.x - 75,
       y: mousePosition.y - 75,
       backgroundImage: `url(${gif})`,
@@ -97,6 +98,7 @@ const App = () => {
         </div>
         <Mint />
       </div>
+      <Footer />
     </>
   );
 };

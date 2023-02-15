@@ -1,6 +1,6 @@
 * {padding: 0;
     margin: 0;
-    cursor: none;}
+    cursor: none; }
 
 
     .A{
@@ -130,10 +130,11 @@ align-items: flex-start;
 } */
 
 .astronauta{
-    background: url(https://i.gifer.com/YKcN.gif), url(./img/astronauta.jpg) ;
-    background-repeat: no-repeat, no-repeat;
-    background-position:center 7px , top center;
-    background-size: 300px, auto;
+    background: url(https://i.gifer.com/YKcN.gif), url(./img/diagonales.png),
+    url(./img/astronauta.jpg) ;
+    background-repeat: no-repeat,no-repeat, no-repeat;
+    background-position:center 7px ,bottom right, top center;
+    background-size: 300px, auto , auto;
     height: 1982px;
     width: 100%;
 }
@@ -178,20 +179,24 @@ font-size: 19px;
 letter-spacing: 0px;
 line-height: 23px;
 margin-top: 77px; margin-left: 10px;
+border-radius: 11px;
+border-left: 2px solid green;
+border-right: 2px solid green;
 }
 
 
-
+/* 
 .wrapMint{
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  align-content: flex-start;
+ 
+width: 90vw;
+border: solid 1px #00c030;
+border-radius: 21px;
+padding: 33px 13px;
 
 }
 
 
-.gif{width: 300px;}
+.gif{width: 500px; background-color: aqua;}
 .wrapGif{
   background: url(./img/alt-f4_green.gif) 20% 50% no-repeat;
   background-size: 350px ;
@@ -199,7 +204,7 @@ margin-top: 77px; margin-left: 10px;
   width: 100%;
 }
 
-
+ */
 
 
 
@@ -211,12 +216,13 @@ margin-top: 77px; margin-left: 10px;
 
 @media screen and (max-width: 1299px) {
   .astronauta{
-    background: url(./img/plasma.gif),url(https://i.gifer.com/YKcN.gif), url(./img/astronauta.jpg)
+    background: url(./img/plasma.gif), url(./img/diagonales.png),
+    url(https://i.gifer.com/YKcN.gif), url(./img/astro_22.jpg)
      ;
     background-repeat: no-repeat;
-    background-position: 61% 97%, center 7px , top center ;
-    background-size: 351px, 300px, 2101px, auto;
-    height: 1702px;
+    background-position: 55% 88%, 97% 99%, center 7px , top center ;
+    background-size: 377px, auto,  300px, 1977px, auto;
+    height: 1567px;
     width: 100%;
 }
 
@@ -253,5 +259,31 @@ margin-top: 77px; margin-left: 10px;
 }
 
 
+
+.wrapMint{
+display: flex;
+justify-content: center;
+align-items: center;
+  width: 90vw; margin: 0 auto;
+  border: solid 1px #00ff0d;
+  border-radius: 21px;
+  padding: 0px 13px;
+  
+  }
+  .gif{width: 500px;}
+
+
+  .wrapGif{
+    background: url(./img/alt-f4_green.gif) 20% 50% no-repeat;
+    background-size: 350px ;
+    height: 426px;
+    width: 100%;
+  }
+
+
+
+.cuadroMint{
+width: 500px;
+}
 
 }

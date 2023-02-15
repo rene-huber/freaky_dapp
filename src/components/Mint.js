@@ -107,8 +107,8 @@ function Mint() {
   }, [blockchain.account]);
 
   return (
-    <>
-      <div style={{background:"#000"}}>
+    <div className="cuadroMint">
+      <div style={{color: "#00c030"}}>
         <div>
           <div>
             <h2> <p>{blockchain.account}</p>
@@ -223,7 +223,7 @@ function Mint() {
           </p>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
