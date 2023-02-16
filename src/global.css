@@ -20,6 +20,7 @@
         top: 0;
         left: 0;
         pointer-events: none;
+        border: 1px solid #FFF;
       }
 body {
   /* font-family: 'Bebas Neue', cursive;*/
@@ -220,7 +221,7 @@ padding: 33px 13px;
     url(https://i.gifer.com/YKcN.gif), url(./img/astro_22.jpg)
      ;
     background-repeat: no-repeat;
-    background-position: 55% 88%, 97% 99%, center 7px , top center ;
+    background-position: 55% 97%, 97% 99%, center 7px , top center ;
     background-size: 377px, auto,  300px, 1977px, auto;
     height: 1567px;
     width: 100%;
@@ -264,26 +265,55 @@ padding: 33px 13px;
 display: flex;
 justify-content: center;
 align-items: center;
-  width: 90vw; margin: 0 auto;
+  width: 88vw; 
+  height: 511px;
+  margin: 17px auto;
   border: solid 1px #00ff0d;
-  border-radius: 21px;
-  padding: 0px 13px;
+  background:url(./img/tresPuntos.png) no-repeat 27px 11px,#001601ee;
+  background-size: 47px;
   
+  border-radius: 27px;
+  padding: 22px;
+   box-sizing: border-box;
+    
+ 
+    
   }
+.wrapInside{
+display: flex;
+justify-content: center;
+align-items: center;
+  width: 85vw; 
+  height: 455px;
+  margin: 10px  auto 0 auto;
+  border: solid 1px #00ff0d;
+  background: #000000;
+  border-radius: 13px;
+  padding: 22px;
+   box-sizing: border-box;
+ 
+
+   
+   
+  }
+
+
   .gif{width: 500px;}
 
 
   .wrapGif{
-    background: url(./img/alt-f4_green.gif) 20% 50% no-repeat;
-    background-size: 350px ;
-    height: 426px;
+    background: url(./img/alt-f4_green.gif) 1px 0px no-repeat;
+    background-size: 450px ;
+    height: 450px;
     width: 100%;
   }
 
 
 
 .cuadroMint{
-width: 500px;
+width: 500px; height: 301px;
+border-left: 1px solid #00c030;
+padding-left: 50px;
 }
 
 }

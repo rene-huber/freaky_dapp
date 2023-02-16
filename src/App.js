@@ -3,12 +3,10 @@ import Astronauta from "./components/astronauta/Astronauta";
 import BarraNegra from "./components/barraNegra/BarraNegra";
 import Mint from "./components/Mint";
 import Navbar from "./components/Navbar/Navbar";
-import Statue from "./components/Statue/Statue";
 import TextoRotar from "./components/textoRotar/TextoRotar";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import Astro from "./img/astro-low.png";
-import Footer from "./components/footer/Footer"
+import Footer from "./components/footer/Footer";
 import Puntero from "./img/puntero.png";
 import gif from "./img/Freaky_GIF.gif";
 import "./global.css";
@@ -44,6 +42,7 @@ const App = () => {
     text: {
       height: 50,
       width: 29,
+      border: "none",
       x: mousePosition.x - 25,
       y: mousePosition.y - 15,
       backgroundImage: `url(${Puntero})`,
@@ -52,8 +51,9 @@ const App = () => {
       cursor: "none",
     },
     text2: {
-      height: 238,
+      height: 245,
       width: 211,
+      border: "none",
       x: mousePosition.x - 75,
       y: mousePosition.y - 75,
       backgroundImage: `url(${gif})`,
@@ -89,14 +89,16 @@ const App = () => {
       </div>
 
       <div className="wrapMint">
-        <div
-          className="gif"
-          onMouseEnter={textEnter2}
-          onMouseLeave={textLeave2}
-        >
-          <Gif />
+        <div className="wrapInside">
+          <div
+            className="gif"
+            onMouseEnter={textEnter2}
+            onMouseLeave={textLeave2}
+          >
+            <Gif />
+          </div>
+          <Mint />
         </div>
-        <Mint />
       </div>
       <Footer />
     </>
