@@ -90,6 +90,7 @@ const App = () => {
 
       <div className="wrapMint">
         <div className="wrapInside">
+   
           <div
             className="gif"
             onMouseEnter={textEnter2}
@@ -97,7 +98,14 @@ const App = () => {
           >
             <Gif />
           </div>
+
+<div className="mintComponent" onMouseEnter={textEnter} onMouseLeave={textLeave}>
+<h1 className="titulo">Alt F4 </h1>
           <Mint />
+</div>
+
+
+
         </div>
       </div>
       <Footer />

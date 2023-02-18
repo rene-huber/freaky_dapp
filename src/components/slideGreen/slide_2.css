@@ -1,0 +1,18 @@
+.slide2{ 
+    width: 593px;}
+
+.imagen{
+    position:absolute;
+    height: 603px;
+    width: 593px;
+}
+
+@media screen and (max-width: 1367px) {
+    .imagen{
+      
+        height: auto;
+        width: 393px;
+    }
+    .slide2{ 
+        width: 427px;}
+}

@@ -1,14 +1,15 @@
 import React, { useEffect, useState, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { connect} from "../redux/blockchain/blockchainActions";
+import { connect } from "../redux/blockchain/blockchainActions";
 import { fetchData } from "../redux/data/dataActions";
+import "../global.css";
 
 const truncate = (input, len) =>
   input.length > len ? `${input.substring(0, len)}...` : input;
 
 function Mint() {
   const dispatch = useDispatch();
-  
+
   const blockchain = useSelector((state) => state.blockchain);
   const data = useSelector((state) => state.data);
   const [claimingNft, setClaimingNft] = useState(false);
@@ -108,121 +109,116 @@ function Mint() {
 
   return (
     <div className="cuadroMint">
-      <div style={{color: "#00c030"}}>
-        <div>
-          <div>
-            <h2> <p>{blockchain.account}</p>
-              {data.totalSupply} / {CONFIG.MAX_SUPPLY}
-            </h2>
-            <p>
-              <a target={"_blank"} href={CONFIG.SCAN_LINK}>
-                {truncate(CONFIG.CONTRACT_ADDRESS, 15)}
-              </a>
-            </p>
 
-            {Number(data.totalSupply) >= CONFIG.MAX_SUPPLY ? (
-              <>
-                <h2 style={{ textAlign: "center" }}>The sale has ended.</h2>
-                <p style={{ textAlign: "center" }}>
-                  You can still find {CONFIG.NFT_NAME} on
-                </p>
 
-                <a target={"_blank"} href={CONFIG.MARKETPLACE_LINK}>
-                  {CONFIG.MARKETPLACE}
-                </a>
-              </>
-            ) : (
-              <>
-                <h2 style={{ textAlign: "center" }}>
-                  1 {CONFIG.SYMBOL} costs {CONFIG.DISPLAY_COST}{" "}
-                  {CONFIG.NETWORK.SYMBOL}.
-                </h2>
 
-                <p style={{ textAlign: "center" }}>Excluding gas fees.</p>
-
-                {blockchain.account === "" ||
-                blockchain.smartContract === null ? (
-                  <div>
-                    <p>Connect to the {CONFIG.NETWORK.NAME} network</p>
-
-                    <button
-                      onClick={(e) => {
-                        e.preventDefault();
-                        dispatch(connect());
-                        getData();
-                      }}
-                    >
-                      CONNECT
-                    </button>
-                    {blockchain.errorMsg !== "" ? (
-                      <>
-                        <p>{blockchain.errorMsg}</p>
-                      </>
-                    ) : null}
-                  </div>
-                ) : (
-                  <>
-                    <p>{feedback}</p>
-
-                    <div>
-                      <button
-                        style={{ lineHeight: 0.4 }}
-                        disabled={claimingNft ? 1 : 0}
-                        onClick={(e) => {
-                          e.preventDefault();
-                          decrementMintAmount();
-                        }}
-                      >
-                        -
-                      </button>
-
-                      <p>{mintAmount}</p>
-
-                      <button
-                        disabled={claimingNft ? 1 : 0}
-                        onClick={(e) => {
-                          e.preventDefault();
-                          incrementMintAmount();
-                        }}
-                      >
-                        +
-                      </button>
-                    </div>
-
-                    <div>
-                      <button
-                        disabled={claimingNft ? 1 : 0}
-                        onClick={(e) => {
-                          e.preventDefault();
-                          claimNFTs();
-                          getData();
-                        }}
-                      >
-                        {claimingNft ? "BUSY" : "BUY"}
-                      </button><br/><br/><br/>
-                      
-                    </div>
-                  </>
-                )}
-              </>
-            )}
-          </div>
+<div className="polygon">
+          <h2 style={{ fontSize: "11px" }}>Your wallet: {blockchain.account}</h2>
         </div>
 
-        <div>
-          <p>
-            Please make sure you are connected to the right network (
-            {CONFIG.NETWORK.NAME} Mainnet) and the correct address. Please note:
-            Once you make the purchase, you cannot undo this action.
+      <h2 style={{ color:"#FFF"}} className="costOne">{data.totalSupply} / {CONFIG.MAX_SUPPLY}
+      </h2>
+
+      
+
+      {Number(data.totalSupply) >= CONFIG.MAX_SUPPLY ? (
+        <>
+          <h2 style={{ textAlign: "center" }}>The sale has ended.</h2>
+          <p style={{ textAlign: "center" }}>
+            You can still find {CONFIG.NFT_NAME} on
           </p>
 
-          <p>
-            We have set the gas limit to {CONFIG.GAS_LIMIT} for the contract to
-            successfully mint your NFT. We recommend that you don't lower the
-            gas limit.
-          </p>
-        </div>
-      </div>
+          <a target={"_blank"} href={CONFIG.MARKETPLACE_LINK}>
+            {CONFIG.MARKETPLACE}
+          </a>
+        </>
+      ) : (
+        <>
+          <h2 className="costOne">
+            1 {CONFIG.SYMBOL} costs {CONFIG.DISPLAY_COST}{" "}
+            {CONFIG.NETWORK.SYMBOL}.
+          </h2>
+
+          <p style={{ textAlign: "center" }}>Excluding gas fees.</p>
+
+          {blockchain.account === "" || blockchain.smartContract === null ? (
+            <div>
+              <p>Connect to the {CONFIG.NETWORK.NAME} network</p>
+
+              <button
+                className="botonMint"
+                onClick={(e) => {
+                  e.preventDefault();
+                  dispatch(connect());
+                  getData();
+                }}
+              >
+                CONNECT / METAMASK
+              </button>
+              {blockchain.errorMsg !== "" ? (
+                <>
+                  <p>{blockchain.errorMsg}</p>
+                </>
+              ) : null}
+            </div>
+          ) : (
+            <>
+              <p>{feedback}</p>
+
+              <div>
+                <button
+                  style={{ lineHeight: 0.4 }}
+                  disabled={claimingNft ? 1 : 0}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    decrementMintAmount();
+                  }}
+                >
+                  -
+                </button>
+
+                <h2>{mintAmount}</h2>
+
+                <button
+                  disabled={claimingNft ? 1 : 0}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    incrementMintAmount();
+                  }}
+                >
+                  +
+                </button>
+              </div>
+
+              <div>
+                <button className="botonMint"
+                  disabled={claimingNft ? 1 : 0}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    claimNFTs();
+                    getData();
+                  }}
+                >
+                  {claimingNft ? "BUSY" : "BUY"}
+                </button>
+              </div>
+            </>
+          )}
+        </>
+      )}
+
+      {/* <div>
+
+        
+<p style={{ fontSize: "9px", textAlign:"center" }}>  Please make sure you are connected to the right network <span style={{color:"#F90"}}>
+  
+{CONFIG.NETWORK.NAME} Mainnet</span> and the correct address. Please note:
+            Once you make the purchase, you cannot undo this action.</p>
+        <p style={{ fontSize: "9px", textAlign:"center" }}>
+          Gas limit to <span style={{color:"#F90"}}>{CONFIG.GAS_LIMIT}</span> for the contract to successfully mint
+          your NFT. We recommend that you don't lower the gas limit.
+        </p>
+      </div> */}
     </div>
   );
 }
