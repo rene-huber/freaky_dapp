@@ -15,11 +15,11 @@ function NextMint() {
           <img src={white} alt={"white list"}  />
         </a></div>
       </div>
-      <div className="extraTexto"> 
+      {/* <div className="extraTexto"> 
       Get ready the next collection is incoming! you'll be able to ride in
       like never before. Don't miss out on this chance to add a rare
           and exclusive piece Art (ChatGTP).
-        </div>
+        </div> */}
     </div>
   );
 }

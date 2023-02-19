@@ -8,8 +8,8 @@ export default function Footer() {
     
 <div className="social">
 
-  / <a className="github" href="https://github.com/rene-huber" target={"blank"}>GitHub</a> / 
-  <a className="twt" href="https://twitter.com/elfrito" target={"blank"}>Twitter</a> / <a className="insta" href="https://www.instagram.com/renehuber_/" target={"blank"}>Instagram</a> / 
+<a className="github" href="https://rene-huber.eu" target={"blank"}>Huber</a> / <a className="github" href="https://github.com/rene-huber" target={"blank"}>GitHub</a> / 
+  <a className="twt" href="https://twitter.com/elfrito" target={"blank"}>Twitter</a> / <a className="insta" href="https://www.instagram.com/huberpro" target={"blank"}>Instagram</a> / 
 </div>
 
     </div>

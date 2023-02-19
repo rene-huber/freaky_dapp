@@ -4,10 +4,7 @@ import image1 from "../../img/g1.png"
 import image2 from "../../img/g2.png"
 import image3 from "../../img/g3.png"
 import image4 from "../../img/g4.png"
-import image5 from "../../img/g5.png"
-import image6 from "../../img/g6.png"
-import image7 from "../../img/g7.png"
-import image8 from "../../img/g8.png"
+
 
 const images = [ image1, image2,image3, image4];
 

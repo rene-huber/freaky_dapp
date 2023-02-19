@@ -27,7 +27,7 @@
 }
 
 body {
-  /* font-family: 'Bebas Neue', cursive;*/
+
   font-family: 'Sarpanch', sans-serif;
   letter-spacing: 1px;
 
@@ -142,8 +142,16 @@ body {
   }
 }
 
-
-
+.astronauta {
+  background: url(./img/plasma.gif), url(./img/diagonales2.png),
+    url(https://i.gifer.com/YKcN.gif), url(./img/astro_22.jpg);
+  background-repeat: no-repeat;
+  background-position: 55% 81%, 77% 100%, center 7px, top center;
+  background-size: auto, 555px, 300px, 2375px ;
+  height: 1897px;
+  width: 100%;
+}
+/* 
 .astronauta {
   background: url(https://i.gifer.com/YKcN.gif), url(./img/diagonales.png),
     url(./img/astronauta.jpg);
@@ -152,17 +160,16 @@ body {
   background-size: 300px, auto, auto;
   height: 1982px;
   width: 100%;
-}
+} */
 
 .nextMint {
   padding-top: 177px;
   width: 100%;
   overflow: hidden;
   margin-top: 7px;
-  height: 747px;
+  height: auto;
   background: url(../src/components/nextMint/bk-greenLinea.png) 13% 255px no-repeat;
-
-  background-size: 90% auto;
+background-size: 90% auto;
 
 
 }
@@ -210,6 +217,201 @@ body {
   border-right: 2px solid green;
 }
 
+.textoP {
+  max-width: 55%;
+  padding-top: 1px;
+}
+
+.scenario {
+  background: url(./img/bk-pink.jpg) no-repeat bottom center;
+  background-size: 100% 100%;
+  overflow: hidden;
+}
+
+.white {
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 1px;
+  width: 221px;
+  height: 111px;
+  margin: 343px 0 0 239px;
+}
+
+.extraTexto {
+  color: #00c230;
+  width: 50%;
+  height: 55px;
+  float: right;
+  text-align: right;
+  font-size: 15px;
+  letter-spacing: 0px;
+  line-height: 19px;
+  margin-top: 111px;
+  margin-right: 131px;
+  padding: 9px 17px 0 5px;
+  text-shadow: 0px 0px 11px #000000, 0px 0px 7px #000000, 0px 0px 5px #000000, 0px 0px 2px #00cf56;
+  background-color: #00000088;
+  backdrop-filter: blur(8px)
+}
+
+
+
+.wrapMint {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 65vw;
+  height: 577px;
+  margin: 31px auto;
+  border: solid 2px #00ff0d;
+  background: url(./img/tresPuntos.png) no-repeat 31px 11px, #00160194;
+  background-size: 37px;
+  border-radius: 27px;
+  padding: 22px;
+  box-sizing: border-box;
+
+  -webkit-box-shadow: 0px 0px 19px 9px rgba(0, 255, 17, 0.092);
+  -moz-box-shadow: 0px 0px 19px 9px rgba(0, 255, 17, 0.092);
+  box-shadow: 0px 0px 19px 9px rgba(0, 255, 17, 0.092);
+
+}
+
+
+.wrapInside {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 61vw;
+  height: 521px;
+  margin: 7px auto 0 auto;
+  border: solid 1px #00ff00;
+  background: url(./img/tv.gif), url(./img/tv_noise.gif);
+  background-repeat: repeat;
+
+  border-radius: 17px;
+  padding: 0px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 9px 3px rgba(0, 255, 17, 0.092),
+    inset 0px 0px 39px 39px rgba(0, 0, 0, 0.92);
+}
+
+.gif {
+  width: 385px;
+  height: 437px;
+  padding: 0;
+
+}
+
+.wrapGif {
+
+  height: 100%;
+  width: 100%;
+}
+
+.costOne {
+  color: #ff6600;
+  font-size: 23px;
+}
+
+
+.titulo {
+  font-family: 'Press Start 2P', cursive;
+  color: #ff6600;
+  -webkit-text-stroke: .1px rgba(0, 0, 0, 0.9);
+  text-shadow: -3px 1px rgba(146, 29, 0, 0.897);
+}
+
+
+.tituloSupply {
+  color: #ffffff;
+  font-size: 11px;
+  line-height: 33px;
+
+}
+
+.supply {
+  width: 63%;
+  height: 57px;
+  padding: 5px 1px;
+  text-align: center;
+  line-height: 65px;
+  letter-spacing: 0px;
+  font-size: 27px;
+  font-family: 'Press Start 2P', cursive;
+  background-color: rgba(0, 153, 94, 0.1);
+  border: 1px solid #003610;
+  border-radius: 7px;
+  backdrop-filter: blur(1px);
+  text-shadow: -3px 4px rgba(255, 255, 255, 0.1);
+}
+
+.mintComponent {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.cuadroMint {
+  color: #FFF;
+  width: 400px;
+  height: 100%;
+  border-left: 1px solid #00c030a8;
+  padding: 0px 70px;
+}
+
+
+
+.botonMint:hover {
+  background: #00330d6b;
+  color: #FFF
+}
+
+.botonMint {
+  color: #000000;
+  background: #009b276b;
+  border-left: 2px solid;
+  width: 311px;
+  height: 33px;
+  border: 1px solid #00ff0d;
+  box-shadow: -3px 3px 0px 1px #001d09;
+  font-family: 'Sarpanch', sans-serif;
+  font-weight: 800;
+  font-size: 15px;
+}
+
+.cantidad {
+  display: flex;
+  font-family: 'Press Start 2P', cursive;
+  width: 255px;
+  height: 35px;
+}
+
+.pushable {
+  width: 55px;
+  font-size: 27px;
+  text-align: center;
+  height: 26px;
+  margin: 1px 7px;
+  font-family: 'Press Start 2P', cursive;
+  background: #ff9800;
+}
+
+.pushable:hover {
+  background: #ff3300;
+}
+
+.numero {
+  color: rgb(255, 255, 255);
+  font-size: 29px;
+}
+
+.letraPequena {
+  padding-top: 15px;
+}
+
+.cuadroMint h2 {
+  color: #ff6600;
+}
 
 
 
@@ -224,7 +426,17 @@ body {
     height: 1567px;
     width: 100%;
   }
-
+  .nextMint {
+    padding-top: 177px;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 7px;
+    height: auto;
+    background: url(../src/components/nextMint/bk-greenLinea.png) 13% 255px no-repeat;
+  background-size: 90% auto;
+  
+  
+  }
   .textoP {
     max-width: 55%;
     padding-top: 1px;
@@ -311,8 +523,7 @@ body {
   }
 
   .wrapGif {
-    /* background: url(./img/alt-f4_green2.gif) center bottom no-repeat;
-    background-size: 320px ; */
+ 
     height: 100%;
     width: 100%;
   }
@@ -335,7 +546,7 @@ body {
     color: #ffffff;
     font-size: 11px;
     line-height: 33px;
-    
+
   }
 
   .supply {
@@ -372,7 +583,7 @@ body {
 
   .botonMint:hover {
     background: #00330d6b;
-    color:#FFF
+    color: #FFF
   }
 
   .botonMint {
@@ -388,30 +599,35 @@ body {
     font-size: 15px;
   }
 
-.cantidad{
-  display: flex;
-  font-family: 'Press Start 2P', cursive;
-  width: 255px;
-  height: 35px;
-}
-.pushable{
-  width: 55px;
-  font-size: 27px;
-  text-align: center;
-  height: 26px;
-  margin: 1px 7px;
-  font-family: 'Press Start 2P', cursive;
-  background: #ff9800;
-    }
-    .pushable:hover{background: #ff3300;}
-.numero{ 
-color: rgb(255, 255, 255);
-font-size: 29px;
-}
+  .cantidad {
+    display: flex;
+    font-family: 'Press Start 2P', cursive;
+    width: 255px;
+    height: 35px;
+  }
 
-.letraPequena{
-  padding-top: 15px;
-}
+  .pushable {
+    width: 55px;
+    font-size: 27px;
+    text-align: center;
+    height: 26px;
+    margin: 1px 7px;
+    font-family: 'Press Start 2P', cursive;
+    background: #ff9800;
+  }
+
+  .pushable:hover {
+    background: #ff3300;
+  }
+
+  .numero {
+    color: rgb(255, 255, 255);
+    font-size: 29px;
+  }
+
+  .letraPequena {
+    padding-top: 15px;
+  }
 
   .cuadroMint h2 {
     color: #ff6600;
