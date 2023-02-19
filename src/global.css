@@ -220,7 +220,7 @@ body {
       url(https://i.gifer.com/YKcN.gif), url(./img/astro_22.jpg);
     background-repeat: no-repeat;
     background-position: 55% 95%, 87% 100%, center 7px, top center;
-    background-size: 377px, auto, 300px, 1977px, auto;
+    background-size: 377px, 555px, 300px, 1977px, auto;
     height: 1567px;
     width: 100%;
   }
@@ -272,7 +272,7 @@ body {
     height: 531px;
     margin: 31px auto;
     border: solid 2px #00ff0d;
-    background: url(./img/tresPuntos.png) no-repeat 27px 5px, #00160194;
+    background: url(./img/tresPuntos.png) no-repeat 31px 11px, #00160194;
     background-size: 37px;
     border-radius: 27px;
     padding: 22px;
@@ -299,7 +299,7 @@ body {
     border-radius: 17px;
     padding: 0px;
     box-sizing: border-box;
-    box-shadow: 0px 0px 19px 3px rgba(0, 255, 17, 0.092),
+    box-shadow: 0px 0px 9px 3px rgba(0, 255, 17, 0.092),
       inset 0px 0px 39px 39px rgba(0, 0, 0, 0.92);
   }
 
@@ -317,15 +317,41 @@ body {
     width: 100%;
   }
 
-  .costOne h2 {
-    color: #ffffff;
+  .costOne {
+    color: #ff6600;
+    font-size: 23px;
   }
 
-  .costOne {
 
-    font-size: 17px;
+  .titulo {
     font-family: 'Press Start 2P', cursive;
-    background: #755540;
+    color: #ff6600;
+    -webkit-text-stroke: .1px rgba(0, 0, 0, 0.9);
+    text-shadow: -3px 1px rgba(146, 29, 0, 0.897);
+  }
+
+
+  .tituloSupply {
+    color: #ffffff;
+    font-size: 11px;
+    line-height: 33px;
+    
+  }
+
+  .supply {
+    width: 63%;
+    height: 57px;
+    padding: 5px 1px;
+    text-align: center;
+    line-height: 65px;
+    letter-spacing: 0px;
+    font-size: 27px;
+    font-family: 'Press Start 2P', cursive;
+    background-color: rgba(0, 153, 94, 0.1);
+    border: 1px solid #003610;
+    border-radius: 7px;
+    backdrop-filter: blur(1px);
+    text-shadow: -3px 4px rgba(255, 255, 255, 0.1);
   }
 
   .mintComponent {
@@ -338,27 +364,58 @@ body {
     color: #FFF;
     width: 400px;
     height: 100%;
-    border-left: 1px solid #00c030;
+    border-left: 1px solid #00c030a8;
     padding: 0px 70px;
   }
 
 
 
   .botonMint:hover {
-    background: #ffc400;
+    background: #00330d6b;
+    color:#FFF
   }
 
   .botonMint {
-    background: #002509;
-    width: 300px;
-    height: 55px;
+    color: #000000;
+    background: #009b276b;
+    border-left: 2px solid;
+    width: 311px;
+    height: 33px;
     border: 1px solid #00ff0d;
+    box-shadow: -3px 3px 0px 1px #001d09;
+    font-family: 'Sarpanch', sans-serif;
+    font-weight: 800;
+    font-size: 15px;
   }
+
+.cantidad{
+  display: flex;
+  font-family: 'Press Start 2P', cursive;
+  width: 255px;
+  height: 35px;
+}
+.pushable{
+  width: 55px;
+  font-size: 27px;
+  text-align: center;
+  height: 26px;
+  margin: 1px 7px;
+  font-family: 'Press Start 2P', cursive;
+  background: #ff9800;
+    }
+    .pushable:hover{background: #ff3300;}
+.numero{ 
+color: rgb(255, 255, 255);
+font-size: 29px;
+}
+
+.letraPequena{
+  padding-top: 15px;
+}
 
   .cuadroMint h2 {
     color: #ff6600;
   }
-
 
 
 

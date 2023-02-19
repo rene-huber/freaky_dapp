@@ -43,8 +43,8 @@ const App = () => {
       height: 50,
       width: 29,
       border: "none",
-      x: mousePosition.x - 25,
-      y: mousePosition.y - 15,
+      x: mousePosition.x - 15,
+      y: mousePosition.y - 1,
       backgroundImage: `url(${Puntero})`,
       backgroundSize: "cover",
       backgroundColor: "transparent",
@@ -100,7 +100,7 @@ const App = () => {
           </div>
 
 <div className="mintComponent" onMouseEnter={textEnter} onMouseLeave={textLeave}>
-<h1 className="titulo">Alt F4 </h1>
+
           <Mint />
 </div>
 

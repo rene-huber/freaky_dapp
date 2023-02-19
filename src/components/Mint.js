@@ -109,17 +109,16 @@ function Mint() {
 
   return (
     <div className="cuadroMint">
-
-
-
-<div className="polygon">
-          <h2 style={{ fontSize: "11px" }}>Your wallet: {blockchain.account}</h2>
-        </div>
-
-      <h2 style={{ color:"#FFF"}} className="costOne">{data.totalSupply} / {CONFIG.MAX_SUPPLY}
-      </h2>
-
-      
+<h1 className="titulo">Freaky <span style={{ fontSize:"27px"}}>
+Collection</span>
+<span style={{ color: "#FFF", fontSize:"17px" }}>.</span></h1>
+<h3 className="tituloSupply">Supply Collection:  <span style={{ color: "#F90" }}>
+            {CONFIG.NETWORK.NAME} Mainnet
+          </span></h3>
+    <div className="supply">
+      <h2 style={{ color: "#FFF" }}>
+        {data.totalSupply}/{CONFIG.MAX_SUPPLY}
+      </h2></div>
 
       {Number(data.totalSupply) >= CONFIG.MAX_SUPPLY ? (
         <>
@@ -134,17 +133,20 @@ function Mint() {
         </>
       ) : (
         <>
-          <h2 className="costOne">
-            1 {CONFIG.SYMBOL} costs {CONFIG.DISPLAY_COST}{" "}
-            {CONFIG.NETWORK.SYMBOL}.
-          </h2>
 
-          <p style={{ textAlign: "center" }}>Excluding gas fees.</p>
+       
+
+          <div className="costOne">
+           (01) <span style={{color:"#FFF"}}>{CONFIG.SYMBOL}</span> = {CONFIG.DISPLAY_COST}{" "}<span style={{color:"#FFF"}}>
+            {CONFIG.NETWORK.SYMBOL}</span>.
+          </div>
+
+          <p style={{ textAlign: "left", fontSize:"11px" }}><span style={{color:"#F90"}}>*</span>Excluding Gas fees.</p>
 
           {blockchain.account === "" || blockchain.smartContract === null ? (
             <div>
-              <p>Connect to the {CONFIG.NETWORK.NAME} network</p>
-
+              {/* <p>Connect to the {CONFIG.NETWORK.NAME} network</p>  */}
+<br />
               <button
                 className="botonMint"
                 onClick={(e) => {
@@ -163,35 +165,41 @@ function Mint() {
             </div>
           ) : (
             <>
-              <p>{feedback}</p>
+            <div className="polygon">
+                  <h2 style={{ fontSize: "9px", padding:"5px"}}>
+                    Your wallet: {blockchain.account}
+                  </h2>
+                </div>
+              
 
-              <div>
-                <button
-                  style={{ lineHeight: 0.4 }}
+              <div className="cantidad">
+
+              <div className="numero">0{mintAmount}</div>
+
+                <button className="pushable"
                   disabled={claimingNft ? 1 : 0}
                   onClick={(e) => {
                     e.preventDefault();
                     decrementMintAmount();
                   }}
-                >
-                  -
-                </button>
+                > -</button>
 
-                <h2>{mintAmount}</h2>
+                
 
-                <button
+                <button className="pushable"
                   disabled={claimingNft ? 1 : 0}
                   onClick={(e) => {
                     e.preventDefault();
                     incrementMintAmount();
                   }}
-                >
-                  +
-                </button>
+                >+</button>
+
+                
               </div>
 
               <div>
-                <button className="botonMint"
+                <button
+                  className="botonMint"
                   disabled={claimingNft ? 1 : 0}
                   onClick={(e) => {
                     e.preventDefault();
@@ -201,24 +209,29 @@ function Mint() {
                 >
                   {claimingNft ? "BUSY" : "BUY"}
                 </button>
+                <p style={{fontSize:" 10px"}}>{feedback}</p>
               </div>
             </>
           )}
         </>
       )}
 
-      {/* <div>
-
-        
-<p style={{ fontSize: "9px", textAlign:"center" }}>  Please make sure you are connected to the right network <span style={{color:"#F90"}}>
-  
-{CONFIG.NETWORK.NAME} Mainnet</span> and the correct address. Please note:
-            Once you make the purchase, you cannot undo this action.</p>
-        <p style={{ fontSize: "9px", textAlign:"center" }}>
-          Gas limit to <span style={{color:"#F90"}}>{CONFIG.GAS_LIMIT}</span> for the contract to successfully mint
-          your NFT. We recommend that you don't lower the gas limit.
+      <div className="letraPequena">
+        <p style={{ fontSize: "9px", textAlign: "left" }}>
+          {" "}
+          Please make sure you are connected to the right network{" "}
+          <span style={{ color: "#F90" }}>
+            {CONFIG.NETWORK.NAME} Mainnet
+          </span>{" "}
+          and the correct address. Once you make the purchase, you
+          cannot undo this action. <br/>
         </p>
-      </div> */}
+        <p style={{ fontSize: "9px", textAlign: "left", marginTop:"5px" }}>
+          Gas limit to <span style={{ color: "#F90" }}>{CONFIG.GAS_LIMIT}</span>{" "}
+          for the contract to successfully mint your NFT. We recommend that you
+          don't lower the gas limit.
+        </p>
+      </div>
     </div>
   );
 }
