@@ -1,10 +1,10 @@
 .banana{
     font-family: 'Rubik', sans-serif;
-    color:#000;
-    background: url(./banana.png);
-    background-size: 210px, 33px ;
+    color:#09ff00;
+    background: url(./banana.png), url(./bk-foot.png);
+    background-size: 210px,  auto ;
     background-repeat: no-repeat, repeat-X;
-    background-position: center bottom, top left;
+    background-position: center bottom;
 
     bottom: 0;
     display: flex;
@@ -17,8 +17,8 @@
   text-decoration: none;
     padding: 21px 121px;
 }
-.banana a{text-decoration: none; color: black; cursor:help;}
-.copy p {color: #000;}
+.banana a{text-decoration: none; color: rgb(255, 255, 255); cursor:help;}
+.copy p {color: #ffffff;}
 
 .imgBanana{
 bottom: 0
@@ -42,7 +42,7 @@ bottom: 0
 @media screen and (max-width: 400px) {
   .banana{flex-direction:column;
     
-    background: url(./bk-foot.gif),url(./banana.png);
+    background: url(./bk-foot.png),url(./banana.png);
     background-size: 33px, 210px ;
     background-repeat: repeat-x, no-repeat;
     background-position: 0 193px, center 0px;  
