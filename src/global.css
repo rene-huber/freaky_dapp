@@ -167,12 +167,13 @@ body {
   width: 100%;
   overflow: hidden;
   margin-top: 7px;
-  height: auto;
-  background: url(../src/components/nextMint/bk-greenLinea.png) 13% 255px no-repeat;
-background-size: 90% auto;
-
-
+  height: 727px;
+  background: url(../src/img/bk-greenLinea.png) 21% 255px no-repeat;
+background-size: 80% auto;
 }
+.texNext{ color:#00ff00; text-align: right; width: 37%; float: right; margin-right: 17%; font-size: 11px;}
+
+
 
 .white {
   justify-content: center;
@@ -187,13 +188,14 @@ background-size: 90% auto;
   letter-spacing: 1px;
   width: 328px;
   height: 125px;
-  margin: 468px 0 0 372px;
+  margin: 549px 0 0 413px;
 
 
 }
 
 .logoWhite {
   opacity: 0.7;
+
 }
 
 .logoWhite:hover {
@@ -228,14 +230,14 @@ background-size: 90% auto;
   overflow: hidden;
 }
 
-.white {
+/* .white {
   font-size: 12px;
   line-height: 15px;
   letter-spacing: 1px;
   width: 221px;
   height: 111px;
   margin: 343px 0 0 239px;
-}
+} */
 
 .extraTexto {
   color: #00c230;
@@ -416,6 +418,10 @@ background-size: 90% auto;
 
 
 
+/* @media screen and (max-width: 1299px) {
+  .nextMint {height: 727px;}
+} */
+
 @media screen and (max-width: 1299px) {
   .astronauta {
     background: url(./img/plasma.gif), url(./img/diagonales2.png),
@@ -431,12 +437,13 @@ background-size: 90% auto;
     width: 100%;
     overflow: hidden;
     margin-top: 7px;
-    height: auto;
-    background: url(../src/components/nextMint/bk-greenLinea.png) 13% 255px no-repeat;
-  background-size: 90% auto;
-  
-  
+    height: 507px;
+    background: url(../src/img/bk-greenLinea.png) 21% 255px no-repeat;
+  background-size: 80% auto;
   }
+.texNext{ color:#00ff00; text-align: right; width: 50%; float: right; margin-right: 17%; font-size: 11px;}
+
+
   .textoP {
     max-width: 55%;
     padding-top: 1px;
