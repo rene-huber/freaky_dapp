@@ -167,7 +167,7 @@ body {
   width: 100%;
   overflow: hidden;
   margin-top: 7px;
-  height: 727px;
+  height: 897px;
   background: url(../src/img/bk-greenLinea.png) 21% 255px no-repeat;
 background-size: 80% auto;
 }
@@ -643,6 +643,39 @@ background-size: 80% auto;
 }
 
 
+@media screen and (max-width: 1399px) {
+  .wrapMint{
+  display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 47%;
+    height: auto;
+    margin: 47px auto;
+   flex-wrap: wrap-reverse;
+    padding: 22px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 19px 9px rgb(0 255 17 / 9%);
+}
+.wrapInside {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: auto;
+  height: auto;
+  margin: 7px auto 0 auto;
+  flex-wrap: wrap-reverse;
+  border-radius: 17px;
+  padding: 0px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 9px 3px rgb(0 255 17 / 9%), inset 0px 0px 39px 39px rgb(0 0 0 / 92%);
+}
+
+.cuadroMint{border-left: none}
+.mintComponent { padding: 55px 11px;}
+.gif{height: 477px;}
+
+
+}
 
 
 
@@ -652,7 +685,31 @@ background-size: 80% auto;
 .ps5{display: none;}
 }
 @media screen and (max-width: 599px) {
-
+  .cuadroMint {
+    color: #FFF;
+    width: 285px;
+    height: 100%;
+    border-left: none;
+    padding: 0px 8px;}
+    .botonMint {width: 229px;}
 .codeBar{display: none;}
 .ps5{display: none;}
+
+.logo{transform: rotate(282deg); top: 219px!important}
+.nextMint {
+  padding-top: 177px;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 7px;
+  height: 747px;
+  background: url(../src/img/bikeMOBILE22.png) 21% 255px no-repeat;
+background-size: 80% auto;
+}
+.astronauta {
+background-size: 377px, 1px, 300px, 1977px;
+ }
+
+.letrero{font-size: 7px !important}
+.textoP{max-width: 95%; padding-bottom: 11px;}
+
 }
