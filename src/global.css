@@ -97,7 +97,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
-  height: 100px;
+  height: auto;
   background: #000;
 }
 
@@ -640,9 +640,19 @@ background-size: 80% auto;
     color: #ff6600;
   }
 
+}
 
 
 
 
 
+@media screen and (max-width: 1099px) {
+
+.codeBar{display: none;}
+.ps5{display: none;}
+}
+@media screen and (max-width: 599px) {
+
+.codeBar{display: none;}
+.ps5{display: none;}
 }
