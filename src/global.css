@@ -415,7 +415,17 @@ background-size: 80% auto;
   color: #ff6600;
 }
 
+.opensea{ display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+gap: 5%;
+width: auto;
+height: 70px;
+background: none;
+margin: 0 auto;}
 
+.open{ background: none;}
 
 
 /* @media screen and (max-width: 1299px) {

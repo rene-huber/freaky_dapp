@@ -4,6 +4,7 @@ import { connect } from "../redux/blockchain/blockchainActions";
 import { fetchData } from "../redux/data/dataActions";
 import "../global.css";
 
+
 const truncate = (input, len) =>
   input.length > len ? `${input.substring(0, len)}...` : input;
 
@@ -232,6 +233,7 @@ Collection</span>
           don't lower the gas limit.
         </p>
       </div>
+      
     </div>
   );
 }

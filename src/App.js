@@ -11,6 +11,7 @@ import Puntero from "./img/puntero.png";
 import gif from "./img/Freaky_GIF.gif";
 import "./global.css";
 import Gif from "./components/alt_f4/Gif";
+import Opensea from "./components/Opensea";
 
 const App = () => {
   const [mousePosition, setMousePosition] = useState({
@@ -108,6 +109,8 @@ const App = () => {
 
         </div>
       </div>
+<Opensea/>
+
       <Footer />
     </>
   );
