@@ -144,7 +144,7 @@ body {
 
 .astronauta {
   background: url(./img/plasma.gif), url(./img/diagonales2.png),
-    url(https://i.gifer.com/YKcN.gif), url(./img/astro_22.jpg);
+    url(./img/YKcN.gif), url(./img/astro_22.jpg);
   background-repeat: no-repeat;
   background-position: 55% 81%, 77% 100%, center 7px, top center;
   background-size: auto, 555px, 300px, 2375px ;
@@ -294,7 +294,7 @@ background-size: 80% auto;
   padding: 0px;
   box-sizing: border-box;
   box-shadow: 0px 0px 9px 3px rgba(0, 255, 17, 0.092),
-    inset 0px 0px 39px 39px rgba(0, 0, 0, 0.92);
+    inset 0px 0px 39px 39px rgba(0, 0, 0, 0.77);
 }
 
 .gif {
@@ -435,7 +435,7 @@ margin: 0 auto;}
 @media screen and (max-width: 1299px) {
   .astronauta {
     background: url(./img/plasma.gif), url(./img/diagonales2.png),
-      url(https://i.gifer.com/YKcN.gif), url(./img/astro_22.jpg);
+      url(./img/YKcN.gif ), url(./img/astro_22.jpg);
     background-repeat: no-repeat;
     background-position: 55% 95%, 87% 100%, center 7px, top center;
     background-size: 377px, 555px, 300px, 1977px, auto;
@@ -529,7 +529,7 @@ margin: 0 auto;}
     padding: 0px;
     box-sizing: border-box;
     box-shadow: 0px 0px 9px 3px rgba(0, 255, 17, 0.092),
-      inset 0px 0px 39px 39px rgba(0, 0, 0, 0.92);
+      inset 0px 0px 39px 39px rgba(0, 0, 0, 0.77);
   }
 
   .gif {
@@ -653,7 +653,7 @@ margin: 0 auto;}
 }
 
 
-@media screen and (max-width: 1399px) {
+@media screen and (max-width: 1077px) {
   .wrapMint{
   display: flex;
     justify-content: space-around;
@@ -677,7 +677,7 @@ margin: 0 auto;}
   border-radius: 17px;
   padding: 0px;
   box-sizing: border-box;
-  box-shadow: 0px 0px 9px 3px rgb(0 255 17 / 9%), inset 0px 0px 39px 39px rgb(0 0 0 / 92%);
+  box-shadow: 0px 0px 9px 3px rgb(0 255 17 / 9%), inset 0px 0px 39px 39px rgb(0 0 0 / 77%);
 }
 
 .cuadroMint{border-left: none}

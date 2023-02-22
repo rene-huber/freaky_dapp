@@ -30,10 +30,10 @@ bottom: 0
     justify-content: flex-end;
     align-items: flex-end;
 
-    background: url(./banana.png);
-    background-size: 210px ;
-    background-repeat: no-repeat;
-    background-position: left bottom;
+    background: url(./banana.png), url(./bk-foot.png);
+    background-size: 210px,  auto ;
+    background-repeat: no-repeat, repeat-X;
+    background-position: center bottom;
     
   }
   .social {display: none;}
@@ -42,10 +42,10 @@ bottom: 0
 @media screen and (max-width: 400px) {
   .banana{flex-direction:column;
     
-    background: url(./bk-foot.png),url(./banana.png);
-    background-size: 33px, 210px ;
-    background-repeat: repeat-x, no-repeat;
-    background-position: 0 193px, center 0px;  
+    background: url(./banana.png), url(./bk-foot.png);
+    background-size: 210px,  auto ;
+    background-repeat: no-repeat, repeat-X;
+    background-position: center bottom;
   
   
   }
