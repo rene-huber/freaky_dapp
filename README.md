@@ -1,1 +1,1 @@
-[!demo] https://freaky.rene-huber.eu/
+[demo] https://freaky.rene-huber.eu/
